@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JioStar Newsletter Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <!-- Header / Nav Bar -->
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="logo-wrapper">
+      <img src="assets/Header.png"
+           alt="JioStar"
+           class="logo-img"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+      <div class="logo-fallback" style="display:none;">
+        <span class="logo-dot"></span>
+        <span class="logo-text">JioStar</span>
+      </div>
+    </div>
+
+  </div>
+</header>
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Innovation Hub</p>
+        <h1 class="hero-title">Stay Ahead of<br>What Matters Most</h1>
+        <p class="hero-subtitle">
+          Curated newsletters on Artificial Intelligence, Sports Technology,
+          Media &amp; Entertainment, and beyond — delivered to your inbox weekly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="cards-section">
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 8l10 6 10-6"/>
+            </svg>
+          </div>
+          <h2 class="card-title">Subscribe</h2>
+          <p class="card-body">Receive weekly newsletters directly in your inbox. Stay informed with the latest insights from JioStar's innovation teams.</p>
+          <button class="btn btn-primary" onclick="openSubscribe()">Subscribe Now</button>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
+              <path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h2 class="card-title">Personalise</h2>
+          <p class="card-body">Select the topics that matter to you. We'll tailor your newsletter feed to match your professional interests.</p>
+          <button class="btn btn-secondary" onclick="openTopics()">Choose Topics</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 JioStar. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup container -->
+  <div id="popup"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
